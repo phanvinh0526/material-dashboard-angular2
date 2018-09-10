@@ -5,6 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 
+
 const routes: Routes =[
   {
     path: '',
@@ -14,7 +15,7 @@ const routes: Routes =[
     path: '',
     component: AdminLayoutComponent,
     children: [
-        {
+    {
       path: '',
       loadChildren: './layouts/admin-layout/admin-layout.module#AdminLayoutModule'
   }]}
@@ -27,6 +28,8 @@ const routes: Routes =[
     // { path: 'notifications',  component: NotificationsComponent },
     // { path: 'upgrade',        component: UpgradeComponent },
     // { path: '',               redirectTo: 'dashboard', pathMatch: 'full' }
+    
+
 ];
 
 @NgModule({

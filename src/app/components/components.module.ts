@@ -6,6 +6,12 @@ import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 
+/**
+ *  Component Module
+ *    just used for static sections (such as Nav, Header, Footer)
+ *    different / independant components are defined in "admin-layout.module.ts"
+ */
+
 @NgModule({
   imports: [
     CommonModule,
@@ -15,6 +21,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     FooterComponent,
     NavbarComponent,
     SidebarComponent
+
   ],
   exports: [
     FooterComponent,
